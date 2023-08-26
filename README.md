@@ -46,7 +46,7 @@ class LoggerMiddleware : ReducedMiddleware<CounterState, Action, ReducedStore<Co
 }
 ```
 
-Combining ktreduces with JavaFX to make nice declarative UI definition:
+Combining ktreduced with JavaFX to make nice declarative UI definition:
 ```kotlin
 class CounterView(val store: AppStore) {
 
