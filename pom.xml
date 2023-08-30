@@ -5,7 +5,7 @@
 
     <groupId>fr97.ktreduced</groupId>
     <artifactId>ktreduced</artifactId>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>fr97.ktreduced ktreduced</name>
