@@ -13,7 +13,7 @@ open class Store<S : ReducedState, A : ReducedAction>(
         override val reducer: (state: S, action: A) -> S)
     : ReducedStore<S, A> {
 
-    protected var innerState: S = state
+    private var innerState: S = state
 
     private var dispatchWithMiddleware: (A) -> Unit = { innerState = reducer(innerState, it) }
 
