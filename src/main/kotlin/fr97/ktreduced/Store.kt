@@ -27,9 +27,9 @@ open class Store<S : ReducedState, A : ReducedAction>(
             throw IllegalStateException("Reducers can't call dispatch!")
         }
         isDispatching = true
-        dispatchWithMiddleware(action) // dispatch
+        dispatchWithMiddleware(action)
         isDispatching = false
-        subscribers.forEach { it.invoke(innerState) } // notify change
+        subscribers.forEach { it.invoke(innerState) }
     }
 
     /**
